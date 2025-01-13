@@ -1,0 +1,8 @@
+{
+  "name": "FaselHD Repository",
+  "description": "Arabic Movies and Series from FaselHD",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/MohamedYassin2/Test/main/faselhd_extension.json"
+  ]
+}

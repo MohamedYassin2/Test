@@ -1,20 +1,19 @@
 {
-    "name": "FaselHD",
-    "version": "1.0",
-    "type": "movie, series",
-    "language": [
-        "ar"
-    ],
-    "baseUrl": "https://w1.faselhdxwatch.top",
-    "searchUrl": "/search?query={query}",
-    "loadMore": true,
-    "scraper": {
-        "list": ".BlockItem",
-        "title": ".BlockTitle > a",
-        "link": ".BlockTitle > a@href",
-        "image": ".BlockImage img@src"
-    },
-    "headers": {
-        "User-Agent": "Mozilla/5.0"
-    }
+  "name": "FaselHD",
+  "version": "1.0",
+  "type": "movie, series",
+  "language": ["ar"],
+  "baseUrl": "https://web184.faselhd.cafe",
+  "searchUrl": "/?s={query}",
+  "loadMore": true,
+  "scraper": {
+    "list": ".postDiv",
+    "title": ".postDiv a .h4",
+    "link": ".postDiv a@href",
+    "image": ".postDiv .imgdiv-class img@src",
+    "stream": "button.hd_btn@data-url"
+  },
+  "headers": {
+    "User-Agent": "Mozilla/5.0"
+  }
 }
